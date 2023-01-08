@@ -5,8 +5,8 @@ import Maplayer from "./components/MapLayer/Maplayer";
 function App() {
   return (
     <div>
-      <Map />
-      {/* <Maplayer /> */}
+      {/* <Map /> */}
+      <Maplayer />
     </div>
   );
 }
