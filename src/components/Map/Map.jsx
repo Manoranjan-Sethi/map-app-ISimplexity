@@ -21,9 +21,3 @@ function Map() {
 }
 
 export default Map;
-
-{
-  /* <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup> */
-}

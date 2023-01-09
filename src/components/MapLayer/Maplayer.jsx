@@ -3,10 +3,8 @@ import "./Maplayer.css";
 import {
   MapContainer,
   TileLayer,
-  Marker,
   Popup,
   LayersControl,
-  LayerGroup,
   Circle,
   FeatureGroup,
 } from "react-leaflet";
@@ -24,29 +22,36 @@ function Maplayer() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <LayersControl position="topright">
-        <LayersControl.Overlay name="Marker with popup">
-          {/* <Marker position={(a, b, c)}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker> */}
-        </LayersControl.Overlay>
-        <LayersControl.Overlay checked name="Layer group with circles">
-          {/* {data.map((ele) => (
-            <div key={ele.id}>
-              <Circle
-                center={[ele.lat, ele.lon]}
-                pathOptions={{ fillColor: "red" }}
-                radius={500000}
-              />
-            </div>
-          ))} */}
-        </LayersControl.Overlay>
+        <LayersControl.Overlay name="Marker with popup"></LayersControl.Overlay>
+        <LayersControl.Overlay
+          checked
+          name="Layer group with circles"
+        ></LayersControl.Overlay>
         <LayersControl.Overlay name="Feature group">
           {data?.map((ele) => (
-            <FeatureGroup key={ele.id} pathOptions={{ color: "purple" }}>
+            <FeatureGroup
+              key={ele.id}
+              pathOptions={{
+                color:
+                  ele.dataUsage < 101
+                    ? "red"
+                    : ele.dataUsage < 201
+                    ? "green"
+                    : ele.dataUsage < 301
+                    ? "blue"
+                    : ele.dataUsage < 401
+                    ? "cyan"
+                    : ele.dataUsage < 501
+                    ? "orange"
+                    : ele.dataUsage < 601
+                    ? "black"
+                    : ele.dataUsage < 701
+                    ? "purple"
+                    : "white",
+              }}
+            >
               <Popup>Data usage is {ele.dataUsage}</Popup>
-              <Circle center={[ele.lat, ele.lon]} radius={390000} />
+              <Circle center={[ele.lat, ele.lon]} radius={ele.area} />
             </FeatureGroup>
           ))}
         </LayersControl.Overlay>

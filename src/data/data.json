@@ -2,7 +2,7 @@
   {
     "id": 1,
     "region": "US",
-    "dataUsage": 290,
+    "dataUsage": 100,
     "area": 390000,
     "lat": -5.966537,
     "lon": 24.27284
@@ -10,47 +10,48 @@
   {
     "id": 2,
     "region": "US",
-    "dataUsage": 490,
-    "area": 390000,
+    "dataUsage": 200,
+    "area": 190000,
     "lat": 18.811972,
     "lon": 77.710337
   },
   {
     "id": 3,
     "region": "AT",
-    "dataUsage": 790,
-    "area": 390000,
+    "dataUsage": 300,
+    "area": 290000,
     "lat": 27.993706,
     "lon": 110.581429
   },
   {
     "id": 4,
     "region": "SE",
-    "dataUsage": 590,
+    "dataUsage": 400,
+    "area": 390000,
     "lat": -26.746313,
     "lon": 131.323615
   },
   {
     "id": 5,
     "region": "AT",
-    "dataUsage": 290,
-    "area": 390000,
+    "dataUsage": 500,
+    "area": 490000,
     "lat": -26.903179,
     "lon": -64.145123
   },
   {
     "id": 6,
     "region": "SE",
-    "dataUsage": 390,
-    "area": 390000,
+    "dataUsage": 600,
+    "area": 590000,
     "lat": 33.548161,
     "lon": 102.238747
   },
   {
     "id": 7,
     "region": "US",
-    "dataUsage": 490,
-    "area": 390000,
+    "dataUsage": 700,
+    "area": 690000,
     "lat": 34.999786,
     "lon": -102.164821
   }
