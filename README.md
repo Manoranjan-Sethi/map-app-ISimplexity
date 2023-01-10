@@ -1,4 +1,4 @@
-# Blog App
+# Map App
 
 - [Click here](https://effervescent-zuccutto-5708b6.netlify.app/) to see preview of my project.
 
