@@ -1,6 +1,6 @@
 # Blog App
 
-- [Click here]() to see preview of my project.
+- [Click here](https://effervescent-zuccutto-5708b6.netlify.app/) to see preview of my project.
 
 ## Tech Stack
 
